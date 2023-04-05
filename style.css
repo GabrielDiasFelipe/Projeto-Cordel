@@ -1,28 +1,73 @@
 @charset "UTF-8";
+@font-face {
+    font-family:co2;
+    src: url(fontes/xilosa_.ttf) format(truetype);
+}
+@font-face {
+    font-family:co1;
+    src: url(fontes/Cordel\ Encarnado.ttf) format(truetype);
+}
+
+:root{
+    --colors: #613a4291;
+    --color: #DBAFB8;
+    --colort:#3c2f32;
+    --titulo:'co1',Courier,sans-serif;
+    --texto:'co2',Courier,sans-serif;
+}
 
 body{
-    background-color: aliceblue;
-    margin:0px
+    margin: 0px;
+    background-color: var(--color);
 }
-
 header{
-    background-color:black;
+    background:black left top no-repeat fixed;
+}
+header > h1{
+    margin: 0px;
+    font-family:var(--titulo);
+    font-size: max(38px,6vw);
+    text-align: center;
+    font-weight: normal;
     color: white;
-    margin:0px
+    padding: 28px 0px 0px 0px;
+}
+header > h2{
+    margin: 0px;
+    font:normal normal 1em Arial;
+    text-align: center;
+    color: white;
+    padding: 18px 0px 23px 0px;
+    font-size:max(15px, 1.4vw);
+}
+header a{
+ 
+ text-decoration: none;
+ color:white;
+}
+header a:hover{ 
+  text-decoration: underline;
+  font-weight: bolder;
+}
+section p{
+    font-size:max(1.3em , 2vw);
+    font-family: var(--texto);
+    color:var(--colort);
     
 }
-header > h1,h2{
-    margin: 0px;
-    text-align: center;
+section.i{
+    background: gray url(imagens/tema.jpg) left top no-repeat fixed;
+    background-size:cover;
+    padding: 15px 0px 20px 0px;
 }
-section{
-    background-color: blanchedalmond;
-    width:250px;
-    padding: 20px;
-    margin-top:50px
+section p{
+    margin-left: 12px;
+    margin-bottom: 5px;
+    width:max(230px,25%);
+    padding: 0px 10px 35px 5px ; 
 }
-section.pequeno{
-
-
+section p.opaco{
+    background-color: var(--colors);
+    color:rgb(255, 255, 255);
+    
 }
-
