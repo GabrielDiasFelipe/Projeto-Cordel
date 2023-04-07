@@ -65,7 +65,7 @@ section.cordel{
     box-shadow: inset 0px 2px 5px 0px var(--trans);
 }
 section.livro{
-    background: rgba(128, 128, 128, 0) url(imagens/cordel.jpg) center right  no-repeat fixed;
+    background: url(imagens/cordel.jpg) center right no-repeat fixed;
     background-size:cover;
     padding: 15px 0px 20px 0px;
     box-shadow: inset 0px 3px 5px 0px var(--trans);
